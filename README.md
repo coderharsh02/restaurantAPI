@@ -1,4 +1,5 @@
 # RestaurantAPI CRUD Operation 
+## URL: https://restaurant-api-qezq.onrender.com/
 
 ## Libraries and Frameworks
 - NodeJS
@@ -83,3 +84,9 @@
 - /api/restaurants/639e00a43c8e09cedecf134c
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response Message: "restaurantId: 639e00a43c8e09cedecf134c successfully deleted"
+
+
+## Deployed using render.com
+- step 1: web services -> connect with gitHub -> select repo 
+- step 2: Name: "restaurant-api", Root directory: "." , Build Command: "npm install"
+- step 3: Advanced -> Environment Variables -> Put .env file key and value pair
