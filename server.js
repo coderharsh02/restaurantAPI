@@ -33,7 +33,7 @@ app.post("/api/restaurants", (req, res) => {
 // EG : url/api/restaurants?page=1&perPage=10&borough=Queens
 app.get("/api/restaurants", (req, res) => {
   console.log(req.query.page, req.query.perPage, req.query.borough);
-  if (!req.query.page || !req.query.perPage || !req.query.borough) {
+  if (!req.query.page || !req.query.perPage) {
     res.status(400).json({ error: "Parameters MISSING" });
   } else {
     if (

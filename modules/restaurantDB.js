@@ -54,7 +54,7 @@ module.exports = class RestaurantDB {
 
   getAllRestaurants(page, perPage, borough) {
     let findBy = borough ? { borough } : {};
-
+    console.log(findBy);
     if (+page && +perPage) {
       return this.Restaurant.find(findBy)
         .sort({ restaurant_id: +1 })
